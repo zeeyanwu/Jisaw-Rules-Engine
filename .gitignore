@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual Environments
+.venv/
+env/
+venv/
+virtualenv/
+
+# IDE and OS specific
+.vscode/
+.idea/
+.DS_Store
+
+# Data files - Should not be version controlled
+/code/
+/data/
+*.csv
+
+# Model artifacts - These are large binaries
+/models/
+*.bin
+*.safetensors
+*.pth
+
+# Submission files
+/submissions/
+
+# Log files
+*.log
+
+# Accelerate/DeepSpeed cache
+.accelerate/
