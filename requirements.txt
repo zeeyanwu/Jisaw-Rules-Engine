@@ -1,0 +1,34 @@
+# ==============================================================================
+# IMPORTANT: PyTorch Installation
+# ==============================================================================
+# This project requires a GPU-enabled version of PyTorch.
+# Do NOT install it using this file via 'pip install -r requirements.txt'.
+# Instead, install it separately using Conda to ensure CUDA compatibility.
+#
+# For CUDA 12.1, use the following command BEFORE installing other packages:
+# conda install pytorch torchvision torchaudio pytorch-cuda=12.1 -c pytorch -c nvidia
+# ==============================================================================
+
+# Basic ML
+pandas==2.2.2
+numpy==1.26.4
+scikit-learn==1.5.0
+tqdm==4.66.4
+pyyaml==6.0.1
+
+# Hugging Face and related libraries
+transformers==4.41.2
+accelerate==0.30.1
+datasets==2.19.1
+peft==0.10.0
+trl==0.8.6
+optimum==1.20.0
+sentence-transformers==2.7.0
+
+# Model specific libraries
+bitsandbytes==0.43.1
+# auto-gptq==0.7.1 # Not strictly required for our 4-bit quantization
+# deepspeed==0.14.4 # Not required for single-GPU
+
+# Experiment Tracking
+wandb==0.17.0
